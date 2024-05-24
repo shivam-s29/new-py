@@ -98,7 +98,7 @@ resource "aws_security_group" "py_sg" {
 
 # Creating EC2 Instance
 resource "aws_instance" "Terraform" {
-  ami                         = "ami-0e001c9271cf7f3b9" 
+  ami                         = "ami-0d94353f7bad10668" 
   instance_type               = "t2.micro"
   key_name                    = aws_key_pair.hema2.key_name
   vpc_security_group_ids      = [aws_security_group.py_sg.id]
