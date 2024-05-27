@@ -7,3 +7,4 @@ pip3 install -r requirements.txt
 python3 app.py
 screen -m python3 app.py
 screen -m -d python3 app.py
+#updated the github
