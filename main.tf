@@ -12,7 +12,7 @@ variable "subnet_cidr" {
 }
 
 # Creating the VPC
-resource "aws_vpc" "main1" {
+resource "aws_vpc" "main" {
   cidr_block       = var.vpc_cidr
   instance_tenancy = "default"
   tags = {
