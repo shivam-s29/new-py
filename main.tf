@@ -100,7 +100,7 @@ resource "aws_security_group" "py_sg" {
 resource "aws_instance" "Terraform" {
   ami                         = "ami-0e001c9271cf7f3b9"
   instance_type               = "t2.micro"
-  key_name                    = "hema2495-key"
+  key_name                    = "p2"
   vpc_security_group_ids      = [aws_security_group.py_sg.id]
   subnet_id                   = aws_subnet.main.id
   associate_public_ip_address = true
